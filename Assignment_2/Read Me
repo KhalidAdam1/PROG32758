@@ -1,0 +1,1 @@
+In this assignment i have bound a bean to thymeleaf form so that the form can make a object using user intergrated information and then display the results in a table
