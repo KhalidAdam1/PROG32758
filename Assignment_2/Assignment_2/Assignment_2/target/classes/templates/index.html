@@ -17,9 +17,12 @@
               th:value="${role1}" th:text="${role1}"> </option>
     </select> </p>
       <br>
-     <p> <input type="submit" value="add"><input type="reset" value="reset"></p>
+       <p> <input type="submit" value="add">
+      </p>
 
-  </form>
+  </form> <a href="/clearTable">
+  <button>Clear</button>
+</a>
 </div>
 
 <div th:if = "${usersList.empty}">
