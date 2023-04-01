@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+</head>
+<body>
+<form action="#" th:action="@{/addMessage}" th:object="${message}" method="post">
+    <input type="text" th:field="*{text}">
+    <input type="Submit" value="Save Message">
+
+</form>
+<form action="#" th:action="@{/destroySession}" method ="get">
+<input type="submit"  value="Destroy Session">
+</form>
+    <div th:unless="${session.messageList.empty}">
+
+            <ul th:each="message : ${session.messageList}">
+                <li th:text="${message.text}"></li>
+            </ul>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
